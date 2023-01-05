@@ -2,6 +2,8 @@
 
 Working items: Gauges, headlights, turn indicators. This is still a work in progress project.
 
+A special thank to Marcin for the checksum calculator for the rpm which greatly helped this project!!
+
 ## Video
 [![Demo](https://youtube.com/shorts/hUrF_S29sS0?feature=share)
 
