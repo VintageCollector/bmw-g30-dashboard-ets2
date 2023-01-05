@@ -29,9 +29,10 @@ void canSendRPM();
 void canSendSpeed();
 void canSendTime();
 void canSendEngineTemp();
-
+void canSendvinNumber();
 void canSendAbsCounter();
 void canSendAirbagCounter();
+void canSendvin();
 
 //Main can data loop
 void canSend();
