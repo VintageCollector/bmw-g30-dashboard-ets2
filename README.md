@@ -1,9 +1,9 @@
-05 Jan 2023: This variant code was tested on a BMW 2018 540i G30 cluster. 
+05 Jan 2023: This variant code was tested on a BMW 2014 BMW X5 F15 cluster. 
 
 Working items: Gauges, headlights, turn indicators. This is still a work in progress project.
 
 ## Video
-[![Demo](https://youtube.com/shorts/gNk2IcqHBqA?feature=share)
+[![Demo](https://youtube.com/shorts/hUrF_S29sS0?feature=share)
 
 # E90 Dashboard ETS2 [original code]
 
