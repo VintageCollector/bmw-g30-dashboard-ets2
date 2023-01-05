@@ -1,3 +1,5 @@
+05 Jan 2023: This variant was tested on a BMW 2018 540i G30 cluster. 
+
 # E90 Dashboard ETS2
 
 Euro Truck Simulator 2 telemetry on the BMW E90 instrument cluster
