@@ -15,13 +15,13 @@ void canSend(){
     canSendRPM();
     canSendSpeed();
     canSendSteeringWheel();
+    canSendvin();
 
-    if(canCounter % 20 == 0){ //200 ms interval
+    if(canCounter % 10 == 0){ //200 ms interval
       canSendLights();
       canSendIndicator(); // internal 600ms timer
       canSendAbs();
       canSendEngineTemp();
-
       canSendAbsCounter();
       canSendAirbagCounter();
 

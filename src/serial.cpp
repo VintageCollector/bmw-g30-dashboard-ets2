@@ -66,6 +66,7 @@ void serialReceive(const uint8_t* buffer, size_t size){
   s_light_fog = serialPacket->fog_lights;
   s_light_indicator = serialPacket->blinkers;
 
+
   s_handbrake = serialPacket->handbrake;
   s_rpm = serialPacket->RPM;
   s_speed = serialPacket->speed;
