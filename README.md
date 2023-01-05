@@ -1,6 +1,11 @@
-05 Jan 2023: This variant was tested on a BMW 2018 540i G30 cluster. 
+05 Jan 2023: This variant code was tested on a BMW 2018 540i G30 cluster. 
 
-# E90 Dashboard ETS2
+Working items: Gauges, headlights, turn indicators. This is still a work in progress project.
+
+## Video
+[![Demo](https://youtube.com/shorts/gNk2IcqHBqA?feature=share)
+
+# E90 Dashboard ETS2 [original code]
 
 Euro Truck Simulator 2 telemetry on the BMW E90 instrument cluster
 
