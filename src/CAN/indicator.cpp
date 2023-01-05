@@ -47,13 +47,13 @@ void canSendIndicator(){
     if(light_indicator != I_OFF){
       switch (light_indicator) {
         case I_LEFT:
-          indicator_frame[0] = 0x91;
+          indicator_frame[0] = 0x11; //0x91
           break;
         case I_RIGHT:
-          indicator_frame[0] = 0xA1;
+          indicator_frame[0] = 0x21; //0xa1
           break;
         case I_HAZZARD:
-          indicator_frame[0] = 0xB1;
+          indicator_frame[0] = 0x31; // 0xb1
           break;
       }
 

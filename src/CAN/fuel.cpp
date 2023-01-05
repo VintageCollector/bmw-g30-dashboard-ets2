@@ -6,7 +6,7 @@ uint8_t fuel_frame[5] = {0x00, 0x00, 0x00, 0x00, 0x00};
 const uint16_t CAN_ID = 0x349;
 
 void canSendFuel(){
-  uint16_t level = min(100+(s_fuel*8), 8000);
+  uint16_t level = min(100+(s_fuel*8), 9997);
   fuel_frame[0] = level;
   fuel_frame[1] = (level >> 8);
 
