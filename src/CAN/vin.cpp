@@ -2,10 +2,11 @@
 #include "globals.h"
 #include "stdint.h"
 
-const uint16_t CAN_ID = 0x0f3;
-uint8_t rpm_frame[8] = {0x00, 0x00, 0x00, 0xC0, 0xF0, 0xC4, 0xFF, 0xFF};
+static uint8_t count = 0x00;
+const uint16_t CAN_ID = 0x3fd;
+uint8_t gear_frame[8] = {0x00, count, 0x00, 0x00, 0xF0, 0xC4, 0xFF, 0xFF};
 
-//Special thanks to Marcin for the checksum calculator
+
 /*
 Credits:
     II43 - https://github.com/II43/Crc8_J1850
@@ -30,7 +31,7 @@ const uint8_t crc8_table[256] = {
     0x7F, 0x62, 0x45, 0x58, 0x0B, 0x16, 0x31, 0x2C, 0x97, 0x8A, 0xAD, 0xB0, 0xE3, 0xFE, 0xD9, 0xC4,
 };
 
-uint8_t crc8(const uint8_t* data, unsigned int len, uint8_t startvalue)
+uint8_t crc81(const uint8_t* data, unsigned int len, uint8_t startvalue)
  {
 	unsigned int i;
 	uint8_t crc = startvalue;
@@ -44,16 +45,20 @@ uint8_t crc8(const uint8_t* data, unsigned int len, uint8_t startvalue)
 
 
 
-void canSendRPM(){
-  uint16_t value = s_rpm;
-
-rpm_frame[0] = (uint8_t)0x0f3;
-uint8_t frame_crc = crc8(rpm_frame, 8, 0xFF);
-frame_crc ^= 0x2b;
-rpm_frame[1] = (uint8_t)frame_crc; // rpm for F15 with crc checksum
-  rpm_frame[2] = value * 0.008;
+void canSendvin(){
 
 
-  CAN.sendMsgBuf(CAN_ID, 0, 8, rpm_frame);
-   return 0;
+gear_frame[0] = (uint8_t)0x3fd;
+uint8_t frame_crc = crc81(gear_frame, 8, 0x00);
+frame_crc ^= 0x53;
+gear_frame[0] = (uint8_t)frame_crc; // rpm for F15 with crc checksum
+  CAN.sendMsgBuf(CAN_ID, 0, 8, gear_frame);
+   
+      count++;
+ if (count == 0x00)
+  {
+   count = 0xff;
+    count++;
+  }
+return 0;
 }
