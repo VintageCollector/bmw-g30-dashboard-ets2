@@ -25,3 +25,6 @@ extern uint16_t s_time_year;
 
 //CAN object
 extern MCP_CAN CAN;
+
+
+
