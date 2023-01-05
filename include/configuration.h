@@ -12,7 +12,7 @@ const uint32_t SERIAL_BAUD_RATE = 115200;
     CAN
 */
 //CAN-BUS boud rate
-const int CAN_BAUD_RATE = CAN_100KBPS;
+const int CAN_BAUD_RATE = CAN_500KBPS;
 
 //SPI CS PIN
 const int SPI_CS_PIN = 9;

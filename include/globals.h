@@ -4,6 +4,7 @@
 
 //States
 extern bool s_ignition;
+extern bool s_vinnumber;
 extern bool s_light_parking;
 extern bool s_light_dip;
 extern bool s_light_main;
