@@ -15,8 +15,8 @@ void canSendSpeed(){
     count++;
   }
 
-  speed_frame[2] = speed_value*0.18;
-  speed_frame[3] = speed_value*0.18;
+  speed_frame[2] = speed_value*0.26;
+  speed_frame[3] = speed_value*0.25;
 
   speed_frame[1] = count;
   

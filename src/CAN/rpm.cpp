@@ -10,7 +10,7 @@ void canSendRPM(){
   uint16_t value = s_rpm;
 
 rpm_frame[1] = value *0.01; 
-rpm_frame[2] = value * 0.008;
+rpm_frame[2] = value * 0.0075;
 
   CAN.sendMsgBuf(CAN_ID, 0, 8, rpm_frame);
  
