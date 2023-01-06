@@ -23,7 +23,7 @@ If you are interested to play with the code you can take a look at the below vid
 [(https://youtu.be/80r-yTnWmj0)]
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# E90 Dashboard ETS2 [original code]
+# E90 Dashboard ETS2 [original version]
 
 Euro Truck Simulator 2 telemetry on the BMW E90 instrument cluster
 
