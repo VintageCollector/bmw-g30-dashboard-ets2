@@ -16,7 +16,7 @@ minimize the game and in the telemetry-client app select the game you want from 
 ## Video
 [![Demo](https://youtube.com/shorts/gNk2IcqHBqA?feature=share)
 
-If you are interted to play with the code you can take a look the below video on how to flash teh original code via MS VSCode:
+If you are interested to play with the code you can take a look at the below video on how to flash the original code via MS VSCode:
 
 
 ## Video
