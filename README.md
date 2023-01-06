@@ -14,13 +14,13 @@ Once you are all teh way in and see you are ready to drive,
 minimize the game and in the telemetry-client app select the game you want from drop down menu. Then click connect.Now resume game and enjoy!
 
 ## Video
-[![Demo](https://youtube.com/shorts/gNk2IcqHBqA?feature=share)
+[![Demo](https://youtube.com/shorts/gNk2IcqHBqA?feature=share)]
 
 If you are interested to play with the code you can take a look at the below video on how to flash the original code via MS VSCode:
 
 
 ## Video
-[![Python Code Flash](https://youtu.be/80r-yTnWmj0)
+[![Python Code Flash](https://youtu.be/80r-yTnWmj0)]
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # E90 Dashboard ETS2 [original code]
