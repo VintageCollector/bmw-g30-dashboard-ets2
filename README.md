@@ -9,7 +9,7 @@ It would look like this for example: D:\Games\American Truck Simulator\bin\win_x
 
 2. Flash the firmware (.hex file) via X-loader to arduino.
 
-3. Open tlemetry-client.exe app. Select your arduino's port. Then click connect. Next launch your ETS/ATS game. 
+3. Open telemetry-client.exe app. Select your arduino's port. Then click connect. Next launch your ETS/ATS game. 
 Once you are all teh way in and see you are ready to drive, 
 minimize the game and in the telemetry-client app select the game you want from drop down menu. Then click connect.Now resume game and enjoy!
 
