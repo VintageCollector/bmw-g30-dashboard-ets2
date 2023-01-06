@@ -2,9 +2,27 @@
 
 Working items: Gauges, headlights, turn indicators. This is still a work in progress project.
 
+For people who aren't finding it difficult, you can use x-loader software to flash the hex files in firmware folder directly to arduino:
+
+1. Put the "ets2-telemetry-udp.dll" file inside your game directory/bin/win_x64/plugins. 
+It would look like this for example: D:\Games\American Truck Simulator\bin\win_x64\plugins
+
+2. Flash the firmware (.hex file) via X-loader to arduino.
+
+3. Open tlemetry-client.exe app. Select your arduino's port. Then click connect. Next launch your ETS/ATS game. 
+Once you are all teh way in and see you are ready to drive, 
+minimize the game and in the telemetry-client app select the game you want from drop down menu. Then click connect.Now resume game and enjoy!
+
 ## Video
 [![Demo](https://youtube.com/shorts/gNk2IcqHBqA?feature=share)
 
+If you are interted to play with the code you can take a look the below video on how to flash teh original code via MS VSCode:
+
+
+## Video
+[![Python Code Flash](https://youtu.be/80r-yTnWmj0)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # E90 Dashboard ETS2 [original code]
 
 Euro Truck Simulator 2 telemetry on the BMW E90 instrument cluster
