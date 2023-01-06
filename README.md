@@ -7,7 +7,7 @@ For people who aren't finding it difficult, you can use x-loader software to fla
 1. Put the "ets2-telemetry-udp.dll" file inside your game directory/bin/win_x64/plugins. 
 It would look like this for example: D:\Games\American Truck Simulator\bin\win_x64\plugins
 
-2. Flash the firmware (.hex file) via X-loader to arduino.
+2. Flash the corresponding firmware (.hex file) via X-loader to arduino. There are two files each for teh Arduino Mega 2560 & UNO each. You need to choose the file for CS Pin depending on the type of shield you have. For Seeed Studios it's CS 9 generally.
 
 3. Open telemetry-client.exe app. Select your arduino's port. Then click connect. Next launch your ETS/ATS game. 
 Once you are all teh way in and see you are ready to drive, 
