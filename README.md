@@ -10,7 +10,7 @@ It would look like this for example: D:\Games\American Truck Simulator\bin\win_x
 2. Flash the corresponding firmware (.hex file) via X-loader to arduino. There are two files for the Arduino Mega 2560 & UNO each. You need to choose the file for CS Pin depending on the type of can bus shield you have. For Seeed Studios it's CS 9 generally.
 
 3. Open telemetry-client.exe app. Select your arduino's port. Then click connect. Next launch your ETS/ATS game. 
-Once you are all teh way in and see you are ready to drive, 
+Once you are all the way in and see you are ready to drive, 
 minimize the game and in the telemetry-client app select the game you want from drop down menu. Then click connect.Now resume game and enjoy!
 
 ## Gameplay demo
