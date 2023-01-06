@@ -13,13 +13,13 @@ It would look like this for example: D:\Games\American Truck Simulator\bin\win_x
 Once you are all teh way in and see you are ready to drive, 
 minimize the game and in the telemetry-client app select the game you want from drop down menu. Then click connect.Now resume game and enjoy!
 
-## Video
+## Gameplay demo
 [(https://youtube.com/shorts/gNk2IcqHBqA?feature=share)]
 
 If you are interested to play with the code you can take a look at the below video on how to flash the original code via MS VSCode:
 
 
-## Video
+## Uploading original code
 [(https://youtu.be/80r-yTnWmj0)]
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
