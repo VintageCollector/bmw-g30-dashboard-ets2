@@ -1,4 +1,4 @@
-05 Jan 2023: This variant code was tested on a BMW 2014 X5 F15 cluster. (Also tested on F10 & F20 from automatic varints and found to be working. But on clusters from manual transmissions the rpm drops du to lack of geari info.)
+05 Jan 2023: This variant code was tested on a BMW 2014 X5 F15 cluster. (Also tested on F10 & F20 from automatic variants and found to be working. But on clusters from manual transmissions the rpm drops du to lack of geari info.)
 
 Working items: Gauges, headlights, turn indicators. This is still a work in progress project.
 
