@@ -6,7 +6,6 @@ const uint16_t CAN_ID = 0x0f3;
 uint8_t rpm_frame[8] = {0x00, 0x00, 0x00, 0xC0, 0xF0, 0xC4, 0xFF, 0xFF};
 
 //Special thanks to Marcin for the checksum calculator
-//https://gist.github.com/Marcin648/3a149b5a31bcd1ce7b9f243abc40d728
 /*
 Credits:
     II43 - https://github.com/II43/Crc8_J1850
@@ -50,7 +49,7 @@ void canSendRPM(){
 
 rpm_frame[0] = (uint8_t)0x0f3;
 uint8_t frame_crc = crc8(rpm_frame, 8, 0xFF);
-frame_crc ^= 0x2b;
+frame_crc ^= 0x2c;
 rpm_frame[1] = (uint8_t)frame_crc; // rpm for F15 with crc checksum
   rpm_frame[2] = value * 0.008;
 
