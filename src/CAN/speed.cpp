@@ -11,8 +11,17 @@ static uint8_t count = 0x00;
 void canSendSpeed(){
   //int speed_value = s_speed*230;
 
+  const uint8_t delta_time = 230; // const
+  uint16_t speed_value =  s_speed * 64;
+
   speed_frame[0] = count;
   speed_frame[1] = count;
+
+  speed_frame[2] = (lo8(speed_value));
+  speed_frame[3] = (hi8(speed_value));
+
+  uint16_t counter = (speed_frame[2] | (speed_frame[3] << 8)) & 0x0FFF;
+  counter += (float)delta_time * M_PI;
 
       count++;
  if (count == 0x00)
@@ -20,14 +29,6 @@ void canSendSpeed(){
    count = 0xff;
     count++;
   }
-
-  const uint8_t delta_time = 230; // const
-  uint16_t speed_value =  s_speed * 60;
-  uint16_t counter = (speed_frame[2] | (speed_frame[3] << 8)) & 0x0FFF;
-counter += (float)delta_time * M_PI;
-
-speed_frame[2] = (lo8(speed_value));
-speed_frame[3] = (hi8(speed_value));
 
   CAN.sendMsgBuf(CAN_ID, 0, 8, speed_frame);
   
