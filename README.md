@@ -1,4 +1,5 @@
 05 Jan 2023: This variant code was tested on a BMW 2018 540i G30 cluster. 
+04 Feb 2023: RPM & Speed code is updated. Much better now
 
 Working items: Gauges, headlights, turn indicators. This is still a work in progress project.
 
