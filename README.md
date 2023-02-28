@@ -1,9 +1,11 @@
-05 Jan 2023: This variant code was tested on a BMW 2018 540i G30 cluster. 
+01 March 2023: This variant code was tested on a 2011/2012 Panamera 970 cluster. 
 
-Working items: Gauges, headlights, turn indicators. This is still a work in progress project.
+Working items: Gauges, headlights, etc. This is still a work in progress project. Some items like oil pressure are just tweaked and nt pulled from game at the moment. more like a dummy only for now. 
+
+I've paired it with a PCM 3.1 headunit and dash chrono clock in the video.
 
 ## Video
-[![Demo](https://youtube.com/shorts/gNk2IcqHBqA?feature=share)
+[![Demo](https://youtube.com/shorts/gv5MDwpHNQA?feature=share)
 
 # E90 Dashboard ETS2 [original code]
 
