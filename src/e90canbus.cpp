@@ -12,23 +12,31 @@ void canSend(){
   if(courentTime - lastTime > 10){
     //10 ms interval
     canSendIgnitionFrame();
-    canSendRPM();
+    canSendHandbrake();
     canSendSpeed();
     canSendSteeringWheel();
+    canSendRPM();
+    canSendGear();
 
-    if(canCounter % 10 == 0){ //200 ms interval
+    if(canCounter % 20 == 0){ //200 ms interval
       canSendLights();
-      canSendIndicator(); // internal 600ms timer
+       // internal 600ms timer
       canSendAbs();
       canSendEngineTemp();
       canSendAbsCounter();
       canSendAirbagCounter();
-
       canSendFuel();
+     canSendOilTemp();
     }
 
+    if(canCounter % 15 == 0){ //150 ms interval
+
+    canSendvinnumber();
+    }
+
+
     if(canCounter % 50 == 0){ //500 ms interval
-      canSendHandbrake();
+      canSendIndicator();
     }
 
     if(canCounter % 100 == 0){ //1000 ms interval
