@@ -1,14 +1,14 @@
 #include "e90canbus.h"
 #include "globals.h"
 
-uint8_t indicator_frame[2] = {0x80, 0xF0};
+uint8_t indicator_frame[8] = {0x80, 0xF0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
-const uint16_t CAN_ID = 0x1F6;
+const uint16_t CAN_ID = 0x363;
 
 uint8_t last_indicator = I_OFF; // off;
 unsigned long last_indicator_time = 0;
 unsigned long last_frame_time = 0;
-const unsigned long INDICATOR_OFF_DELAY = 500;
+const unsigned long INDICATOR_OFF_DELAY = 1000;
 
 void canSendIndicator(){
   /*
@@ -43,32 +43,32 @@ void canSendIndicator(){
 
   //Main decition block. 600ms interval or on signal change.
   unsigned long frame_delta_time = time_now - last_frame_time;
-  if((last_indicator != light_indicator) || (frame_delta_time >= 600)){
+  if((last_indicator != light_indicator) || (frame_delta_time >= 1100)){
     if(light_indicator != I_OFF){
       switch (light_indicator) {
         case I_LEFT:
-          indicator_frame[0] = 0x11; //0x91
+          indicator_frame[2] = 0x04;
           break;
         case I_RIGHT:
-          indicator_frame[0] = 0x21; //0xa1
+          indicator_frame[2] = 0x08;
           break;
         case I_HAZZARD:
-          indicator_frame[0] = 0x31; // 0xb1
+          indicator_frame[2] = 0x0c;
           break;
       }
 
       if(last_indicator == light_indicator){
-        indicator_frame[1] = 0xF1;
+        indicator_frame[1] = 0x01;
       }else{
-        indicator_frame[1] = 0xF2;
+        indicator_frame[1] = 0x02;
       }
     }else{
       indicator_frame[0] = 0x80;
-      indicator_frame[1] = 0xF0;
+      indicator_frame[1] = 0x00;
     }
 
     last_indicator = light_indicator;
     last_frame_time = time_now;
-    CAN.sendMsgBuf(CAN_ID, 0, 2, indicator_frame);
+    CAN.sendMsgBuf(CAN_ID, 0, 8, indicator_frame);
   }
 }
