@@ -34,6 +34,7 @@ void canSendAbsCounter();
 void canSendAirbagCounter();
 void canSendOilTemp();
 void canSendGear();
+void canSendMode();
 
 //Main can data loop
 void canSend();
