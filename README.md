@@ -1,5 +1,7 @@
 01 March 2023: This variant code was tested on a 2011/2012 Panamera 970 cluster. 
 
+**Note:** For BeamNG change IP to "127.0.0.1" and Port to 23444 in simhub and game.
+
 Working items: Gauges, headlights, etc. This is still a work in progress project. Some items like oil pressure are just tweaked and nt pulled from game at the moment. more like a dummy only for now. 
 
 I've paired it with a PCM 3.1 headunit and dash chrono clock in the video.
